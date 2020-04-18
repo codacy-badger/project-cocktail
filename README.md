@@ -1,3 +1,6 @@
+[![Coverage Status](https://coveralls.io/repos/github/francknoelkouassi-dev/project-cocktail/badge.svg?branch=master)](https://coveralls.io/github/francknoelkouassi-dev/project-cocktail?branch=master)
+[![Build Status](https://travis-ci.org/francknoelkouassi-dev/project-cocktail.svg?branch=master)](https://travis-ci.org/francknoelkouassi-dev/project-cocktail)
+
 # ProjectCocktail
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.4.
