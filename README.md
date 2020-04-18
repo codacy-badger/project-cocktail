@@ -1,6 +1,7 @@
 [![Coverage Status](https://coveralls.io/repos/github/francknoelkouassi-dev/project-cocktail/badge.svg?branch=master)](https://coveralls.io/github/francknoelkouassi-dev/project-cocktail?branch=master)
 [![Build Status](https://travis-ci.org/francknoelkouassi-dev/project-cocktail.svg?branch=master)](https://travis-ci.org/francknoelkouassi-dev/project-cocktail)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/f955063fa2d54c9dacdb0c1a1510c50c)](https://www.codacy.com/manual/francknoelkouassi-dev/project-cocktail?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=francknoelkouassi-dev/project-cocktail&amp;utm_campaign=Badge_Grade)
+[![Known Vulnerabilities](https://snyk.io/test/github/francknoelkouassi-dev/project-cocktail/badge.svg?targetFile=package.json)](https://snyk.io/test/github/francknoelkouassi-dev/project-cocktail?targetFile=package.json)
 
 # ProjectCocktail
 
