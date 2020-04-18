@@ -17,4 +17,8 @@ install:
     - npm install
 
 script:
+    - npm run test:cover -- --no-watch --no-progress
     - npm run test -- --no-watch --no-progress
+
+after_success:
+    - npm run coveralls
