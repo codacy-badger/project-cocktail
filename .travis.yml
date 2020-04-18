@@ -17,6 +17,7 @@ install:
     - npm install
 
 script:
+    - npm run test-ci -- --no-watch --no-progress
     - npm run test:cover -- --no-watch --no-progress
     - npm run test -- --no-watch --no-progress
 
