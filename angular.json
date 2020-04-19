@@ -56,6 +56,14 @@
 									"maximumError": "10kb"
 								}
 							]
+						},
+						"demo1": {
+							"fileReplacements": [
+								{
+									"replace": "src/environments/environment.ts",
+									"with": "src/environments/environment.demo1.ts"
+								}
+							]
 						}
 					}
 				},

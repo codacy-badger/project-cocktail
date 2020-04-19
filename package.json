@@ -18,7 +18,8 @@
 		"test:cover": "rm -f ./coverage && ng test --no-watch --code-coverage",
 		"test-ci": "ng test --watch=false --code-coverage && cat ./coverage/project-cocktail/lcov.info | coveralls",
 		"coveralls": "cat ./coverage/*/lcov.info | coveralls",
-		"pree2e": "webdriver-manager update --standalone false --gecko false"
+		"pree2e": "webdriver-manager update --standalone false --gecko false",
+		"build:gh-pages:demo1": "ng build --configuration=demo1 --output-path=gh-pages/demo1/ --base-href=/project-cocktail/demo1/"
 	},
 	"private": true,
 	"dependencies": {
@@ -49,6 +50,7 @@
 		"@types/jasminewd2": "~2.0.3",
 		"@types/node": "^12.11.1",
 		"codelyzer": "^5.1.2",
+		"gh-pages": "^2.2.0",
 		"husky": "^4.2.5",
 		"jasmine-core": "~3.5.0",
 		"jasmine-spec-reporter": "~4.2.1",
