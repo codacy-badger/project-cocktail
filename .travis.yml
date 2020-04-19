@@ -16,6 +16,10 @@ cache:
 install:
     - npm install
 
+branches:
+    only:
+        - master
+
 script:
     - npm run test-ci -- --no-watch --no-progress
     - npm run test -- --no-watch --no-progress
@@ -24,12 +28,12 @@ after_success:
     - npm run coveralls
     - npm run build:gh-pages:demo1
 
-deploy:
-    provider: pages
-    skip_cleanup: true
-    github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
-    keep_history: true
-    local_dir: gh-pages
-    on:
-        branch: master
+    #deploy:
+    #    provider: pages
+    #    skip_cleanup: true
+    #    github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+    #    keep_history: true
+    #    local_dir: dist/project-cocktail
+    #   on:
+    #      branch: master
 
