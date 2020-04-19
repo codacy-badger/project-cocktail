@@ -1,0 +1,75 @@
+<div class="row">
+	<div class="col-12 mx-auto">
+		<form *ngIf="cocktailForm" [formGroup]="cocktailForm">
+			<div class="form-group">
+				<label for="name">Name</label>
+				<input
+					aria-describedby="nameHelp"
+					class="form-control"
+					formControlName="name"
+					id="name"
+					placeholder="Enter name"
+					type="text">
+				<small class="form-text text-danger" id="nameHelp">We'll never share your email with anyone
+					else.</small>
+			</div>
+			<div class="form-group">
+				<label for="image">Image</label>
+				<input
+					class="form-control"
+					formControlName="image"
+					id="image"
+					placeholder="Image"
+					type="text">
+			</div>
+			<div class="form-group">
+				<label for="description">Description</label>
+				<textarea
+					class="form-control"
+					formControlName="description"
+					id="description"
+					placeholder="Description"
+					type="text">
+					</textarea>
+			</div>
+			<hr>
+			<button (click)="addIngredient()" class="btn btn-secondary" type="button">Add ingredients</button>
+			<hr>
+			<label>Ingredient(s)</label>
+			<div formArrayName="ingredients">
+				<div *ngFor="let ingredient of ingredientForms.controls; let i=index"
+					 [formGroupName]="i"
+					 class="form-row mt-2">
+					<div class="col-7">
+						<label>
+							<input
+								class="form-control"
+								formControlName="name"
+								placeholder="Name"
+								type="text">
+						</label>
+					</div>
+					<div class="col">
+						<label>
+							<input
+								class="form-control"
+								formControlName="quantity"
+								placeholder="Quantity"
+								type="number">
+						</label>
+					</div>
+					<span (click)="deleteIngredient(i)" aria-hidden="true" class="fa fa-times red-color"
+						  style="display: inline-block; cursor:
+					pointer">*</span>
+				</div>
+			</div>
+			<hr>
+			<div class="col-12">
+				<button (click)="createAndUpdateCocktail()" [disabled]="cocktailForm.invalid" class="btn btn-primary">
+					{{titleButton}}
+				</button>
+				<button [routerLink]="['../']" class="btn btn-secondary float-right" type="button">Cancel</button>
+			</div>
+		</form>
+	</div>
+</div>

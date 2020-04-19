@@ -1,0 +1,15 @@
+<div *ngIf="cocktails">
+	<ul class="list-group">
+		<li
+			*ngFor="let cocktail of cocktails; let i= index"
+			[routerLink]="[i]"
+			class="list-group-item list-group-item-action"
+			routerLinkActive="active">
+			{{ cocktail.name }}
+		</li>
+	</ul>
+	<hr>
+	<div class="row">
+		<button [routerLink]="['new']" class="btn btn-sm btn-dark">Add cocktail</button>
+	</div>
+</div>
