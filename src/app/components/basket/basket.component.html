@@ -1,11 +1,11 @@
-<div class="container">
+<div class="container m-2">
 	<div class="row">
 		<button class="btn btn-secondary col-1 mx-auto">Reset</button>
-		<button class="btn btn-primary col-1 mx-auto">2</button>
-		<button class="btn btn-success col-1 mx-auto">3</button>
-		<button class="btn btn-danger col-1 mx-auto">4</button>
+		<button (click)="currentState = 'active' " class="btn btn-primary col-1 mx-auto">2</button>
+		<button (click)="currentState = 'inactive' " class="btn btn-success col-1 mx-auto">3</button>
+		<button (click)="currentState = 'cercle' " class="btn btn-danger col-1 mx-auto">4</button>
 	</div>
-	<div class="row">
-		<div [@fly]="'active'" class="square mx-auto"></div>
+	<div class="row m-4">
+		<div [@fly]="currentState" class="square mx-auto"></div>
 	</div>
 </div>

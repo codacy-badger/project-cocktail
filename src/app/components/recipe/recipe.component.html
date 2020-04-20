@@ -1,1 +1,9 @@
-<p>recipe works!</p>
+<div class="container m-4">
+	<div>
+		<button (click)="toggle()">Toggle Status</button>
+	</div>
+
+	<div [@slideStatus]="status" class="square">
+		{{ status == 'active' ? 'Active' : 'Inactive' }}
+	</div>
+</div>

@@ -12,7 +12,7 @@ export class Constants {
 	}
 
 	public static get BASKET_URL(): string {
-		return 'basket';
+		return 'baskets';
 	}
 
 	public static get RECIPE_URL(): string {
